@@ -19,8 +19,9 @@ def process_csv(input_csv_file, output_csv_file):
         writer = csv.writer(csvfile)
         writer.writerows(processed_rows)
 
+
 # Example usage:
-input_file_path = 'input.csv'  # Replace with the path to your input CSV file
+input_file_path = 'output_merged.csv'  # Replace with the path to your input CSV file
 output_file_path = 'output_processed.csv'  # Replace with the desired output file path
 
 process_csv(input_file_path, output_file_path)
