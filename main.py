@@ -41,16 +41,16 @@ def find_duplicate_queries(csv_file_path):
                         file.write(str(ex))
 
 
-        # # extracted text
-        # with open('extracted_queries.csv', 'w', newline='', encoding='utf-8') as csvfile:
-        #     writer = csv.writer(csvfile)
-        #     writer.writerow(["Select Queries", "Extracted Text"])
-        #     count = len(queries)
-        #     for i in range(count):
-        #         try:
-        #             writer.writerow([original_queries[i], queries[i]])
-        #         except:
-        #             pass
+        # extracted text
+        with open('extracted_queries.csv', 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(["Select Queries", "Extracted Text"])
+            count = len(queries)
+            for i in range(count):
+                try:
+                    writer.writerow([original_queries[i], queries[i]])
+                except:
+                    pass
 
         # Count the occurrences of each query
         query_occurrences = Counter(queries)
